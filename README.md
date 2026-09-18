@@ -1,10 +1,10 @@
-# 🧠 DEEPFAKE_DETECTION_MODEL
+# DEEPFAKE_DETECTION_MODEL
 
 A full-fledged system for detecting deepfakes in images and videos using a custom-trained deep learning model powered by EfficientNetB0, wrapped in an interactive Streamlit interface.
 
 ---
 
-## 📌 About
+# About
 
 This project implements a deepfake detection pipeline from scratch. It includes:
 
@@ -17,42 +17,31 @@ The goal is to showcase applied machine learning, model deployment, and frontend
 
 ---
 
-## 🗂 Repository Structure
+# Repository Structure
 
 `├── train/                     # Model architecture, training scripts` <br>
 `├── test data/                 # Sample test videos and images` <br>
 `├── streamlit/app.py           # Streamlit frontend code for inference` <br>
 `├── streamlit/my_model.keras   # Saved trained model` <br>
 
----
-
-### 📸 Output Section
-
-<p align="center">
-  <img src="demo/demo.png" width="30%"/>
-  <img src="demo/screen.png" width="30%"/>
-  <img src="demo/demo2.png" width="30%"/>
-</p>
-
-
 
 ---
 
-## 🚀 How It Works
+# How It Works
 
-1. **Training Phase**
+1. Training Phase
    - EfficientNetB0 (imagenet weights) is used as a base model.
    - Custom dense layers are added for binary classification.
    - Trained on labeled real vs fake datasets.
 
-2. **Streamlit App**
+2. Streamlit App
    - Users upload an image or video.
    - For images: Model instantly classifies as **Fake** or **Real**.
    - For videos: Each frame is predicted, and a percentage of fake frames is shown.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python**
 - **TensorFlow / Keras**
